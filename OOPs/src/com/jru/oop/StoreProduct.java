@@ -33,22 +33,16 @@ public class StoreProduct {
 	}
 
 	public void getProductInfo() {
-		System.out.println(this.productId);
-		System.out.println(this.productName);
-		System.out.println(this.productPrice);
+		System.out.println("Id of the Product : "+this.productId);
+		System.out.println("Name of The Product : "+this.productName);
+		System.out.println("Price of The Product : "+this.productPrice);
 	}
 
 	public static void main(String[] args) {
-
 		StoreProduct SP = new StoreProduct();
-		
 		 int id =Integer.parseInt(IO.readln("Enter Product Id : "));
 		 String name = IO.readln("Enter Product Name :");
 		 double price = Double.parseDouble(IO.readln("Enter Price Of the Product "));
-
-//		int id = 110;
-//		String name = "Kopta";
-//		double price = 189.0;
 		SP.setProductData(id, name, price);
 		SP.getProductInfo();
 
